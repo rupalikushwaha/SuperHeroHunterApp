@@ -15,8 +15,8 @@ function flipcard(i) {  // - G
 }
 
 let ts = "1688549185455";
-let publicKey = "36419ade44b2a052456e82ad6f7afe45";
-let hashVal = "eacda864f7bd854132779d8660bfbb80";
+let publicKey = "d3e0ed68b3868aa4efac480bedc16e24";
+let hashVal = "df352760103bdfcf2455fbebced8351d";
 
 // hashvalue is generated using ts + publickey + privateKey - G
 const [timestamp, apiKey, hashValue] = [ts, publicKey, hashVal];
