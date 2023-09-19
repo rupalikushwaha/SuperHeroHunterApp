@@ -1,0 +1,153 @@
+
+
+  /* -------------------------------------------------------------- */
+  /* background gif */
+  #gif img {
+    height: 100%;
+    width: 100%;
+
+  }
+
+  /* -------------------------------------------------------------- */
+  /* navbar */
+  .navigate {
+    top: -120px;
+    z-index: 1;
+  }
+
+  /* --------------------------------------------------------------- */
+  /* search bar */
+  #searchbar {
+    position: absolute;
+    top: 10vh;
+    left: 50%;
+    transform: translate(-50%);
+    width: auto;
+    display: flex;
+    
+  }
+
+  /* style to blurr any element*/
+  .blur {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+  }
+
+  /* --------------------------------------------------------------- */
+  /* Heroes cards this div contain hero card*/
+  .display-container {
+    display: none;
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, +50%);
+
+  }
+    /* this div container contains both front and back face of the card */
+    .card-container{
+      /* position: absolute; */
+      height: 390px;
+      width: 280px;
+      transform-style: preserve-3d;
+      transition: all 0.8s ease;
+    }
+
+
+    /* Name of character inside card */
+    .character-name {
+      font-size: large;
+      font-weight: 500;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      color: rgb(224, 233, 241);
+      text-align: center;
+      margin-top: 10px;
+    }
+
+
+    /* character description in back of the card */
+    .character-description-back{
+      text-align: justify;
+      padding: 10px 5px 5px 5px;
+    }
+
+    /* this div contain add to fav info and close button */
+    #action{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 4vh 0 4vh 0;
+    }
+
+    
+    /* buttton to swap card */
+    .swap{
+      position: absolute;
+      bottom: 50px;
+      left: 50%;
+      transform: translate(-50%);
+      height: 50px;
+      width: 50px;
+      overflow: hidden;
+    }
+    .swap img{
+      height: 100%;
+      width: 100%;
+    }
+  /* --------------------------------------------------------------------------------- */
+  /* list item of suggestion */
+  .list {
+    position: absolute;
+    width: 40%;
+    background-color: #616361a9;
+    color: #ffffff;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%);
+    top: 110px;
+    max-height: 200px;
+    overflow: scroll;
+  }
+
+    /* css to diable scrollbars which came by default while any scroll view created */
+    .list::-webkit-scrollbar {
+      display: none;
+    }
+
+    .autocomplete-items {
+      padding: 0.5em;
+    }
+
+    .autocomplete-items:hover {
+      background-color: #ddd;
+      color: #171821;
+    }
+    /* this div contain image and text which is shown during suggestions */
+    .parent{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .img-container{
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .img-container img{
+      height: 100%;
+      width: 100%;
+      margin-right: 70px;
+    }
+
+    .text{
+      padding-left: 20px;
+      margin: auto;
+    }

@@ -1,0 +1,141 @@
+/* Home Page */
+body {
+    margin: 0;
+    /* position: relative; */
+  }
+  
+  /*-------------------------------------------------------------------------------- */
+    /* styling for logo in navbar */
+    #logo {
+      width: 52px;
+      height: 52px;
+      overflow: hidden;
+      border-radius: 50%;
+    }
+    
+    #logo img {
+      max-width: 100px;
+      max-height: 100px;
+      position: relative;
+      right: 25px;
+      bottom: 8px;
+    }
+    /* ----------------------------------------------------------------------------- */
+    /* styling for carousal */
+    .carousel{
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        position: absolute;
+        height: 70vh;
+        width: 50vh;
+        overflow: hidden;
+        display: none;
+        background-color: rgb(227, 160, 160);
+    }
+      .carousel-item,.carousel-item img{
+          height: 95%;
+          width: 100%;
+          
+      }
+
+      /* this is a title for different banners like stories
+      series comics and events which displayed on carousel
+      */
+      #magzines{
+        text-align: center;
+        color: rgb(84, 155, 255);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+        font-size: xx-large;
+      }
+
+      /* this is a title which displayed when we click on banners like stories
+      series comics and events and we don't have thumbnail for it*/
+      .title{
+        text-align: center;
+        color: brown;
+        margin-top: 50%;
+
+      }
+
+      /* Close button of carousel */
+      .cl{
+        display: flex;
+        justify-content: center;
+      }
+/* -------------------------------------------------------------------------------------- */
+/* styling for hero card */
+    /* card buttons */
+    .regular {
+      color: yellow;
+    }
+    .solid {
+      display: none;
+      color: yellow;
+    }
+    .close{
+      color: rgb(255, 8, 0);
+    }
+    .actionbutton:hover{
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+      /* front face of the card */
+      .front{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background: rgb(65, 60, 60, 0.8);;
+        color: #000;
+        text-align: center;
+      }
+      /* back face of the card */
+      .back{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background: rgb(65, 60, 60, 0.8);;
+        color: white;
+        text-align: center;
+        transform: rotateY(180deg);
+      }
+      
+    /* this style will apply dynamically to the card whose flip icon is clickes */
+    .flipCard{
+      transform: rotateY(180deg);
+    }
+
+     /* this div contains hero image which shown after clicking in search button or in favourite page*/
+     .container-character-image {
+      max-width: 7em;
+      max-height: 7em;
+      overflow: hidden;
+      border-radius: 50%;
+      position: relative;
+      top:10px;
+      left: 50%;
+      transform: translate(-50%);
+    }
+
+    .container-character-image img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+     /* character desc in front of the card */
+
+     .character-description{
+      color: rgb(224, 233, 241);
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .character-description:hover{
+      font-size: larger;
+    }
+    .character-name:hover{
+      font-size: 30px;
+    }
